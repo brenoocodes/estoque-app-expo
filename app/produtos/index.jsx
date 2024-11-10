@@ -1,11 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Link } from 'expo-router';
 
-export default function App() {
+export default function Produto() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Produtos</Text>
+      <Link href="/produtos/2ac5">
+        Ver produto com id e nome
+      </Link>
     </View>
   );
 }
